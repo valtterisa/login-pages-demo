@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import { GoogleOAuthButton } from '../components/GoogleOAuthButton';
+import Link from 'next/link';
+import { ArrowLeftIcon } from 'lucide-react';
 
 export default function LoginForm() {
     const [isLoading, setIsLoading] = useState(false);
@@ -24,7 +26,9 @@ export default function LoginForm() {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-blue-900/10 to-cyan-900/10"></div>
             </div>
 
-            <div className="relative z-10 flex min-h-screen items-center justify-center p-4">
+            <div className="relative z-10 flex flex-col min-h-screen items-center justify-center p-4">
+                <Link href={"/"} className="flex items-center text-white mb-4 hover:underline"><ArrowLeftIcon className='w-4 h-4 mr-2' />Back to homepage</Link>
+
                 <div className="w-full max-w-md space-y-8 rounded-2xl border border-white/10 bg-black/50 p-6 backdrop-blur-xl">
                     <div className="text-center">
                         <h1 className="text-3xl font-bold tracking-tight">Welcome back to Duty Pro</h1>

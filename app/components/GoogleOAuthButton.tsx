@@ -2,10 +2,14 @@
 
 import React from 'react'
 
-export function GoogleOAuthButton() {
+type GoogleAuthType = {
+    dark?: boolean
+}
+
+export function GoogleOAuthButton({ dark }: GoogleAuthType) {
     return (
         <button
-            className="w-full px-4 py-2 border border-white/10 bg-white/5 text-white rounded-md transition-all duration-300 hover:bg-white/10"
+            className={`w-full px-4 py-2 border border-white/10 bg-white/5 text-white rounded-md transition-all duration-300 hover:bg-white/10 ${dark && "text-black border-black/10 hover:bg-black/10"}`}
             onClick={() => {
                 // Handle Google OAuth
                 console.log('Google OAuth')

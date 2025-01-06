@@ -1,9 +1,12 @@
 import React from 'react';
 import { GoogleOAuthButton } from './GoogleOAuthButton';
+import Link from 'next/link';
+import { ArrowLeftIcon } from 'lucide-react';
 
 const LoginForm3 = () => {
     return (
-        <div className="min-h-screen w-full bg-gradient-to-br from-indigo-900 via-purple-900 to-black flex items-center justify-center p-4">
+        <div className="min-h-screen w-full bg-gradient-to-br from-indigo-900 via-purple-900 to-black flex flex-col items-center justify-center p-4">
+            <Link href={"/"} className="flex items-center text-white mb-4 hover:underline"><ArrowLeftIcon className='w-4 h-4 mr-2' />Back to homepage</Link>
             <div className="w-full max-w-md bg-black/30 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-white/10">
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-bold text-white mb-2">Welcome to Duty Pro</h1>

@@ -6,10 +6,10 @@ import React from 'react';
 
 const LandingPage = () => {
     return (
-        <div className="min-h-screen bg-black flex items-center justify-center p-6">
+        <div className="min-h-screen h-full bg-black flex items-center justify-center p-6">
             <div className="max-w-4xl w-full">
                 <h1 className='text-4xl text-center font-bold mb-8'>choose the login style.</h1>
-                <div className="grid md:grid-cols-3 gap-6 mb-12 text-center">
+                <div className="grid md:grid-cols-3 gap-6 mb-8 text-center">
                     <Link
                         href="/dark-login"
                         className="group bg-zinc-900 rounded-xl p-6 transition-all hover:bg-zinc-800 hover:scale-[1.02] border border-zinc-800"
